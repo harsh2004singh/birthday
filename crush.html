@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title> 
+    <link rel="stylesheet" href="crush.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+        overflow: hidden;
+    }
+    .container {
+        text-align: center;
+        max-width: 600px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+        color: #FF69B4;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .photos img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+    .photos img:hover {
+        transform: scale(1.1);
+    }
+    button {
+        background-color: #FF69B4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #ff85b3;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Happy Birthday,Rashmika Mandanna</h1>
+        <p>You are the most amazing person I've ever met. Wishing you a day full of love, laughter, and joy!</p>
+
+        <!-- Photos section -->
+        <div class="photos">
+            <img src="https://2.bp.blogspot.com/-0Pgd2lz4MkQ/WuWU0yKSlyI/AAAAAAAAJ1E/J-qE7EDVWI8ch8zVCSpD7H8EMSy01GYDgCLcBGAs/s1600/Rashmika-Mandanna-hd-photos-3.jpg" alt="Photo 1">
+            <img src="https://1.bp.blogspot.com/-d2wcvCIZO80/XUcY9hCG_6I/AAAAAAAApqE/IDu0cqasPLEbfAc8C0_VfNzfwxgWY3BaACLcBGAs/s1600/Rashmika%2BMandanna%2BHD%2BWallpapers%2B20.jpg" alt="Photo 2">
+            <img src="https://www.indiancinemagallery.net/wp-content/uploads/2017/11/Rashmika-Mandanna-in-saree-dress-1.jpg" alt="Photo 3">
+            <img src="https://1.bp.blogspot.com/-fFoTYpVc8G4/XUcY5eUTpJI/AAAAAAAAppg/zZ8eyDrpdqw0DRjElNnv7bMiLwEU34nHwCLcBGAs/s1600/Rashmika%2BMandanna%2BHD%2BWallpapers%2B10.jpg" alt="Photo 4">
+            <img src="https://www.mrdustbin.com/wp-content/uploads/2020/03/rashmika-2-768x960.jpg" alt="photo 5">
+        </div>
+
+        <!-- JavaScript for Birthday Surprise -->
+        <button onclick="showMessage()">Click for a Surprise!</button>
+        <p id="surprise-message" style="display: none; color: #FF69B4; font-size: 1.2rem; margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("surprise-message");
+            message.textContent = "You light up my life like nobody else! Happy Birthday!";
+            message.style.display = "block";
+        }
+    </script>
+</body>
+</html>
